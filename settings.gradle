@@ -1,2 +1,2 @@
-include ':app, :panel'
+include ':app', ':panel'
 rootProject.name = "Panel Layout"
