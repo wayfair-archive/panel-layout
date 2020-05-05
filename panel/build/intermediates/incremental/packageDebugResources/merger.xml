@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ao200s/Projects/waystation-app/android/panel/src/main/res"/><source path="/Users/ao200s/Projects/waystation-app/android/panel/build/generated/res/rs/debug"/><source path="/Users/ao200s/Projects/waystation-app/android/panel/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ao200s/Projects/waystation-app/android/panel/src/main/res"><file name="panel_view_default_snap_bottom" path="/Users/ao200s/Projects/waystation-app/android/panel/src/main/res/layout/panel_view_default_snap_bottom.xml" qualifiers="" type="layout"/><file name="panel_view_default_snap_left" path="/Users/ao200s/Projects/waystation-app/android/panel/src/main/res/layout/panel_view_default_snap_left.xml" qualifiers="" type="layout"/><file name="panel_view_default_snap_top" path="/Users/ao200s/Projects/waystation-app/android/panel/src/main/res/layout/panel_view_default_snap_top.xml" qualifiers="" type="layout"/><file name="panel_view_default_snap_right" path="/Users/ao200s/Projects/waystation-app/android/panel/src/main/res/layout/panel_view_default_snap_right.xml" qualifiers="" type="layout"/><file path="/Users/ao200s/Projects/waystation-app/android/panel/src/main/res/values/panel_colors.xml" qualifiers=""><color name="panel_default_snap_overlay_color">#802196F3</color></file><file path="/Users/ao200s/Projects/waystation-app/android/panel/src/main/res/values/panel_dimens.xml" qualifiers=""><dimen name="panel_default_min_width">100dp</dimen><dimen name="panel_default_max_width">600dp</dimen><dimen name="panel_default_min_height">100dp</dimen><dimen name="panel_default_max_height">600dp</dimen><dimen name="panel_default_start_width">320dp</dimen><dimen name="panel_default_start_height">480dp</dimen><dimen name="panel_default_snap_width">300dp</dimen><dimen name="panel_default_snap_height">300dp</dimen></file><file path="/Users/ao200s/Projects/waystation-app/android/panel/src/main/res/values/panel_attrs.xml" qualifiers=""><declare-styleable name="PanelLayout">
+
+        <attr format="reference" name="panel_view"/>
+        <attr format="reference" name="panel_content"/>
+        <attr format="reference" name="panel_move_handle"/>
+        <attr format="reference" name="panel_resize_handle"/>
+
+        <attr format="boolean" name="panel_resize_enabled"/>
+
+        <attr format="dimension" name="panel_min_width"/>
+        <attr format="dimension" name="panel_max_width"/>
+        <attr format="dimension" name="panel_min_height"/>
+        <attr format="dimension" name="panel_max_height"/>
+        <attr format="dimension" name="panel_start_width"/>
+        <attr format="dimension" name="panel_start_height"/>
+        <attr format="dimension" name="panel_snap_width"/>
+        <attr format="dimension" name="panel_snap_height"/>
+
+        <attr format="float" name="panel_snap_width_percent"/>
+        <attr format="float" name="panel_snap_height_percent"/>
+
+        <attr format="integer" name="panel_snap_animation_duration"/>
+        <attr format="integer" name="panel_snap_overlay_animation_duration"/>
+
+        <attr format="color" name="panel_snap_overlay_color"/>
+
+        <attr name="panel_snap_to_edges">
+            <flag name="none" value="0"/>
+            <flag name="left" value="1"/>
+            <flag name="top" value="2"/>
+            <flag name="right" value="4"/>
+            <flag name="bottom" value="8"/>
+            <flag name="all" value="15"/>
+        </attr>
+
+        <attr format="reference" name="panel_snap_top_layout"/>
+        <attr format="reference" name="panel_snap_right_layout"/>
+        <attr format="reference" name="panel_snap_bottom_layout"/>
+        <attr format="reference" name="panel_snap_left_layout"/>
+
+    </declare-styleable></file><file path="/Users/ao200s/Projects/waystation-app/android/panel/src/main/res/values/panel_integers.xml" qualifiers=""><integer name="panel_default_snap_edges">15</integer><integer name="panel_default_snap_animation_duration">300</integer><integer name="panel_default_snap_overlay_animation_duration">300</integer></file></source><source path="/Users/ao200s/Projects/waystation-app/android/panel/build/generated/res/rs/debug"/><source path="/Users/ao200s/Projects/waystation-app/android/panel/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ao200s/Projects/waystation-app/android/panel/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ao200s/Projects/waystation-app/android/panel/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="PanelLayout">
+
+        <attr format="reference" name="panel_view"/>
+        <attr format="reference" name="panel_content"/>
+        <attr format="reference" name="panel_move_handle"/>
+        <attr format="reference" name="panel_resize_handle"/>
+
+        <attr format="boolean" name="panel_resize_enabled"/>
+
+        <attr format="dimension" name="panel_min_width"/>
+        <attr format="dimension" name="panel_max_width"/>
+        <attr format="dimension" name="panel_min_height"/>
+        <attr format="dimension" name="panel_max_height"/>
+        <attr format="dimension" name="panel_start_width"/>
+        <attr format="dimension" name="panel_start_height"/>
+        <attr format="dimension" name="panel_snap_width"/>
+        <attr format="dimension" name="panel_snap_height"/>
+
+        <attr format="float" name="panel_snap_width_percent"/>
+        <attr format="float" name="panel_snap_height_percent"/>
+
+        <attr format="integer" name="panel_snap_animation_duration"/>
+        <attr format="integer" name="panel_snap_overlay_animation_duration"/>
+
+        <attr format="color" name="panel_snap_overlay_color"/>
+
+        <attr name="panel_snap_to_edges">
+            <flag name="none" value="0"/>
+            <flag name="left" value="1"/>
+            <flag name="top" value="2"/>
+            <flag name="right" value="4"/>
+            <flag name="bottom" value="8"/>
+            <flag name="all" value="15"/>
+        </attr>
+
+        <attr format="reference" name="panel_snap_top_layout"/>
+        <attr format="reference" name="panel_snap_right_layout"/>
+        <attr format="reference" name="panel_snap_bottom_layout"/>
+        <attr format="reference" name="panel_snap_left_layout"/>
+
+    </declare-styleable></configuration></mergedItems></merger>

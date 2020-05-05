@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PanelLayout">
+
+        <attr name="panel_view" format="reference" />
+        <attr name="panel_content" format="reference" />
+        <attr name="panel_move_handle" format="reference" />
+        <attr name="panel_resize_handle" format="reference" />
+
+        <attr name="panel_resize_enabled" format="boolean" />
+
+        <attr name="panel_min_width" format="dimension" />
+        <attr name="panel_max_width" format="dimension" />
+        <attr name="panel_min_height" format="dimension" />
+        <attr name="panel_max_height" format="dimension" />
+        <attr name="panel_start_width" format="dimension" />
+        <attr name="panel_start_height" format="dimension" />
+        <attr name="panel_snap_width" format="dimension" />
+        <attr name="panel_snap_height" format="dimension" />
+
+        <attr name="panel_snap_width_percent" format="float" />
+        <attr name="panel_snap_height_percent" format="float" />
+
+        <attr name="panel_snap_animation_duration" format="integer" />
+        <attr name="panel_snap_overlay_animation_duration" format="integer" />
+
+        <attr name="panel_snap_overlay_color" format="color" />
+
+        <attr name="panel_snap_to_edges">
+            <flag name="none" value="0" />
+            <flag name="left" value="1" />
+            <flag name="top" value="2" />
+            <flag name="right" value="4" />
+            <flag name="bottom" value="8" />
+            <flag name="all" value="15" />
+        </attr>
+
+        <attr name="panel_snap_top_layout" format="reference" />
+        <attr name="panel_snap_right_layout" format="reference" />
+        <attr name="panel_snap_bottom_layout" format="reference" />
+        <attr name="panel_snap_left_layout" format="reference" />
+
+    </declare-styleable>
+</resources>

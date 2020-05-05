@@ -1,0 +1,45 @@
+R_DEF: Internal format may change without notice
+local
+attr? panel_content
+attr? panel_max_height
+attr? panel_max_width
+attr? panel_min_height
+attr? panel_min_width
+attr? panel_move_handle
+attr? panel_resize_enabled
+attr? panel_resize_handle
+attr? panel_snap_animation_duration
+attr? panel_snap_bottom_layout
+attr? panel_snap_height
+attr? panel_snap_height_percent
+attr? panel_snap_left_layout
+attr? panel_snap_overlay_animation_duration
+attr? panel_snap_overlay_color
+attr? panel_snap_right_layout
+attr? panel_snap_to_edges
+attr? panel_snap_top_layout
+attr? panel_snap_width
+attr? panel_snap_width_percent
+attr? panel_start_height
+attr? panel_start_width
+attr? panel_view
+color panel_default_snap_overlay_color
+dimen panel_default_max_height
+dimen panel_default_max_width
+dimen panel_default_min_height
+dimen panel_default_min_width
+dimen panel_default_snap_height
+dimen panel_default_snap_width
+dimen panel_default_start_height
+dimen panel_default_start_width
+id content
+id panel
+id panelLayout
+integer panel_default_snap_animation_duration
+integer panel_default_snap_edges
+integer panel_default_snap_overlay_animation_duration
+layout panel_view_default_snap_bottom
+layout panel_view_default_snap_left
+layout panel_view_default_snap_right
+layout panel_view_default_snap_top
+styleable PanelLayout panel_view panel_content panel_move_handle panel_resize_handle panel_resize_enabled panel_min_width panel_max_width panel_min_height panel_max_height panel_start_width panel_start_height panel_snap_width panel_snap_height panel_snap_width_percent panel_snap_height_percent panel_snap_animation_duration panel_snap_overlay_animation_duration panel_snap_overlay_color panel_snap_to_edges panel_snap_top_layout panel_snap_right_layout panel_snap_bottom_layout panel_snap_left_layout

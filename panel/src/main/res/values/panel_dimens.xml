@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="panel_default_min_width">100dp</dimen>
+    <dimen name="panel_default_max_width">600dp</dimen>
+    <dimen name="panel_default_min_height">100dp</dimen>
+    <dimen name="panel_default_max_height">600dp</dimen>
+    <dimen name="panel_default_start_width">320dp</dimen>
+    <dimen name="panel_default_start_height">480dp</dimen>
+    <dimen name="panel_default_snap_width">300dp</dimen>
+    <dimen name="panel_default_snap_height">300dp</dimen>
+</resources>
