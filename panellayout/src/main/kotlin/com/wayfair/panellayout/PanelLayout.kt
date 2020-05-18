@@ -7,7 +7,7 @@
     So UnusedImports are suppressed. */
 @file:Suppress("UnusedImports", "CommentOverPrivateFunction")
 
-package com.wayfair.waystation.panel
+package com.wayfair.panellayout
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -45,19 +45,19 @@ import androidx.transition.AutoTransition
 import androidx.transition.ChangeBounds
 import androidx.transition.Transition
 import androidx.transition.TransitionManager
-import com.wayfair.waystation.panel.PanelPosition.BOTTOM_EDGE
-import com.wayfair.waystation.panel.PanelPosition.LEFT_EDGE
-import com.wayfair.waystation.panel.PanelPosition.NO_EDGE
-import com.wayfair.waystation.panel.PanelPosition.RIGHT_EDGE
-import com.wayfair.waystation.panel.PanelPosition.TOP_EDGE
-import com.wayfair.waystation.panel.PanelPosition.values
-import com.wayfair.waystation.panel.PanelState.HorizontalEdge.LEFT
-import com.wayfair.waystation.panel.PanelState.HorizontalEdge.RIGHT
-import com.wayfair.waystation.panel.PanelState.Snap.ANIMATING
-import com.wayfair.waystation.panel.PanelState.Snap.FLOATING
-import com.wayfair.waystation.panel.PanelState.Snap.SNAPPED
-import com.wayfair.waystation.panel.PanelState.VerticalEdge.BOTTOM
-import com.wayfair.waystation.panel.PanelState.VerticalEdge.TOP
+import com.wayfair.panellayout.PanelPosition.BOTTOM_EDGE
+import com.wayfair.panellayout.PanelPosition.LEFT_EDGE
+import com.wayfair.panellayout.PanelPosition.NO_EDGE
+import com.wayfair.panellayout.PanelPosition.RIGHT_EDGE
+import com.wayfair.panellayout.PanelPosition.TOP_EDGE
+import com.wayfair.panellayout.PanelPosition.values
+import com.wayfair.panellayout.PanelState.HorizontalEdge.LEFT
+import com.wayfair.panellayout.PanelState.HorizontalEdge.RIGHT
+import com.wayfair.panellayout.PanelState.Snap.ANIMATING
+import com.wayfair.panellayout.PanelState.Snap.FLOATING
+import com.wayfair.panellayout.PanelState.Snap.SNAPPED
+import com.wayfair.panellayout.PanelState.VerticalEdge.BOTTOM
+import com.wayfair.panellayout.PanelState.VerticalEdge.TOP
 import kotlin.math.roundToInt
 import kotlin.math.sqrt
 

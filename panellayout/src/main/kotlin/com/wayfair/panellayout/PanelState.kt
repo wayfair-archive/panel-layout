@@ -1,8 +1,8 @@
-package com.wayfair.waystation.panel
+package com.wayfair.panellayout
 
 import android.os.Parcelable
-import com.wayfair.waystation.panel.PanelState.HorizontalEdge.LEFT
-import com.wayfair.waystation.panel.PanelState.VerticalEdge.TOP
+import com.wayfair.panellayout.PanelState.HorizontalEdge.LEFT
+import com.wayfair.panellayout.PanelState.VerticalEdge.TOP
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
