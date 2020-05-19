@@ -1,0 +1,19 @@
+name: Publish a release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  plugin-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+      - name: Publish
+        run: ./gradlew publish
+        env:
+          BINTRAY_API_KEY: ${{ secrets.BINTRAY_API_KEY }}
+          BINTRAY_USER: ${{ secrets.BINTRAY_USER }}
