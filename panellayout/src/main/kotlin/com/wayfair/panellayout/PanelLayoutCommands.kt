@@ -1,4 +1,4 @@
-package com.wayfair.waystation.panel
+package com.wayfair.panellayout
 
 internal interface PanelLayoutCommands {
     var panelLayoutCallbacks: PanelLayout.Callbacks?
