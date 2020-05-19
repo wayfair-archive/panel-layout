@@ -17,6 +17,10 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        buildConfig = false
+        resValues = false
+    }
 }
 
 androidExtensions {
