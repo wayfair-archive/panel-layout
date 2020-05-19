@@ -1,4 +1,4 @@
-## Panel Layout
+## Panel Layout ![CI](https://github.com/GradleUp/auto-manifest/workflows/CI/badge.svg)
 
 Panel Layout is a UI library for Android that allows you to display a floating and resizable panel that can also snap to the edges.
 
@@ -8,7 +8,14 @@ TODO: Gifs and screenshots from sample app to be added after sample app is done.
 
 ## Importing Panel Layout
 
-TODO: Instructions to import to be added after bintray is set up.
+[ ![Bintray](https://img.shields.io/bintray/v/wayfair/PanelLayout/PanelLayout) ](https://bintray.com/wayfair/PanelLayout/PanelLayout/_latestVersion)
+
+
+```kotlin
+dependencies {
+    implementation("com.wayfair.panellayout:panellayout:<latest-version>")
+}
+```
 
 ## How to Use Panel Layout
 
