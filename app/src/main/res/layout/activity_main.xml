@@ -6,13 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.wayfair.panellayout.PanelLayout
+        android:id="@+id/panelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:panel_content="@id/content"
+        app:panel_move_handle="@id/moveHandle"
+        app:panel_resize_enabled="false"
+        app:panel_snap_to_edges="all"
+        app:panel_view="@id/panel"
+        app:panel_start_width="300dp"
+        app:panel_start_height="300dp">
 
+        <View
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ede7f6" />
+
+        <FrameLayout
+            android:id="@+id/panel"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="#FFFFFF">
+
+            <View
+                android:id="@+id/moveHandle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#10000000" />
+        </FrameLayout>
+
+    </com.wayfair.panellayout.PanelLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
