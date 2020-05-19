@@ -36,25 +36,36 @@ dependencies {
 }
 
 publishing {
-    publications.withType(MavenPublication) {
-        pom {
-            groupId = findProperty("GROUP")?.toString()
-            version = findProperty("VERSION_NAME")?.toString()
+    publications.create("default", MavenPublication) {
+        afterEvaluate {
+            from(components.findByName("release"))
+        }
 
-            name.set(findProperty("POM_NAME")?.toString())
-            description.set(findProperty("POM_DESCRIPTION")?.toString())
-            packaging = findProperty("POM_PACKAGING")?.toString()
-            url.set(findProperty("POM_URL")?.toString())
+        def sourcesJarTask = tasks.create("sourcesJar", Jar) {
+            archiveClassifier.set("sources")
+            from(android.sourceSets["main"].java.srcDirs)
+        }
+        artifact(sourcesJarTask)
+
+        groupId = findProperty("GROUP")
+        version = findProperty("VERSION_NAME")
+        artifactId = findProperty("POM_ARTIFACT_ID")
+
+        pom {
+            name = findProperty("POM_NAME")
+            description = findProperty("POM_DESCRIPTION")
+            packaging = findProperty("POM_PACKAGING")
+            url = findProperty("POM_URL")
 
             scm {
-                url.set(findProperty("POM_SCM_URL")?.toString())
-                connection.set(findProperty("POM_SCM_CONNECTION")?.toString())
+                url = findProperty("POM_SCM_URL")
+                connection = findProperty("POM_SCM_CONNECTION")
             }
 
             licenses {
                 license {
-                    name.set(findProperty("POM_LICENCE_NAME")?.toString())
-                    url.set(findProperty("POM_LICENCE_URL")?.toString())
+                    name = findProperty("POM_LICENCE_NAME")
+                    url = findProperty("POM_LICENCE_URL")
                 }
             }
         }
