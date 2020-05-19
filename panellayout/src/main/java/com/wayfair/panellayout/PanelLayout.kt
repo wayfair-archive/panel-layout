@@ -16,22 +16,15 @@ import android.graphics.Rect
 import android.os.Bundle
 import android.os.Parcelable
 import android.util.AttributeSet
-import android.view.AbsSavedState
-import android.view.MotionEvent
-import android.view.MotionEvent.ACTION_CANCEL
-import android.view.MotionEvent.ACTION_DOWN
-import android.view.MotionEvent.ACTION_MOVE
-import android.view.MotionEvent.ACTION_UP
-import android.view.MotionEvent.obtain
-import android.view.View
-import android.view.ViewConfiguration
-import android.view.ViewGroup
+import android.view.*
+import android.view.MotionEvent.*
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.annotation.ColorRes
 import androidx.annotation.IdRes
 import androidx.annotation.LayoutRes
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
+import androidx.core.content.ContextCompat
 import androidx.core.content.res.getResourceIdOrThrow
 import androidx.core.graphics.component1
 import androidx.core.graphics.component2
@@ -40,16 +33,11 @@ import androidx.core.graphics.component4
 import androidx.core.graphics.drawable.toDrawable
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
-import androidx.core.content.ContextCompat
 import androidx.transition.AutoTransition
 import androidx.transition.ChangeBounds
 import androidx.transition.Transition
 import androidx.transition.TransitionManager
-import com.wayfair.panellayout.PanelPosition.BOTTOM_EDGE
-import com.wayfair.panellayout.PanelPosition.LEFT_EDGE
-import com.wayfair.panellayout.PanelPosition.NO_EDGE
-import com.wayfair.panellayout.PanelPosition.RIGHT_EDGE
-import com.wayfair.panellayout.PanelPosition.TOP_EDGE
+import com.wayfair.panellayout.PanelPosition.*
 import com.wayfair.panellayout.PanelPosition.values
 import com.wayfair.panellayout.PanelState.HorizontalEdge.LEFT
 import com.wayfair.panellayout.PanelState.HorizontalEdge.RIGHT
@@ -798,6 +786,7 @@ class PanelLayout @JvmOverloads constructor(
     private inner class PanelMoveSnapListener : OnTouchListener {
         override fun onTouch(v: View, event: MotionEvent): Boolean {
             return when (event.action) {
+                ACTION_DOWN -> true
                 ACTION_MOVE -> handleActionMove(event)
                 ACTION_UP -> handleActionUp()
                 else -> false
