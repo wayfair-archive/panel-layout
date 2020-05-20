@@ -18,11 +18,22 @@
         app:panel_start_width="300dp"
         app:panel_start_height="300dp">
 
-        <View
+        <FrameLayout
             android:id="@+id/content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#ede7f6" />
+            android:background="#f3e5f5">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/showHideButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/colorAccent"
+                android:src="@drawable/ic_show_hide_button"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="32dp"
+                app:fabSize="normal" />
+        </FrameLayout>
 
         <FrameLayout
             android:id="@+id/panel"
@@ -34,7 +45,7 @@
                 android:id="@+id/moveHandle"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:background="#10000000" />
+                android:background="#e1bee7" />
         </FrameLayout>
 
     </com.wayfair.panellayout.PanelLayout>
