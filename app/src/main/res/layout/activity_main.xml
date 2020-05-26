@@ -14,9 +14,9 @@
         app:panel_move_handle="@id/moveHandle"
         app:panel_resize_enabled="false"
         app:panel_snap_to_edges="all"
-        app:panel_view="@id/panel"
+        app:panel_start_height="300dp"
         app:panel_start_width="300dp"
-        app:panel_start_height="300dp">
+        app:panel_view="@id/panel">
 
         <FrameLayout
             android:id="@+id/content"
@@ -28,25 +28,32 @@
                 android:id="@+id/showHideButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:backgroundTint="@color/colorAccent"
-                android:src="@drawable/ic_show_hide_button"
                 android:layout_gravity="bottom|end"
                 android:layout_margin="32dp"
+                android:src="@drawable/ic_show_hide_button"
+                app:backgroundTint="@color/colorAccent"
+                app:tint="@color/white"
                 app:fabSize="normal" />
         </FrameLayout>
 
-        <FrameLayout
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/panel"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:background="#FFFFFF">
+            app:cardBackgroundColor="@color/white">
 
-            <View
-                android:id="@+id/moveHandle"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="#e1bee7" />
-        </FrameLayout>
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/moveHandle"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#e1bee7" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
 
     </com.wayfair.panellayout.PanelLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
