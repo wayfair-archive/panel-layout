@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Panel Layout</string>
+    <string name="shapes">Shapes</string>
+    <string name="tools">Tools</string>
 </resources>
