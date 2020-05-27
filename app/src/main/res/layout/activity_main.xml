@@ -32,8 +32,6 @@
                 android:src="@drawable/ic_show_hide_button"
                 android:layout_gravity="bottom|end"
                 android:layout_margin="32dp"
-                android:src="@drawable/ic_show_hide_button"
-                app:backgroundTint="@color/colorAccent"
                 app:tint="@color/white"
                 app:fabSize="normal" />
         </FrameLayout>
