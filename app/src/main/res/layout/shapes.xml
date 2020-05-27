@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/shape1"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_width"
+        android:background="@drawable/ic_circle"
+        android:backgroundTint="@color/charcoal" />
+
+    <View
+        android:id="@+id/shape2"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_width"
+        android:background="@drawable/ic_circle_outline"
+        android:backgroundTint="@color/charcoal" />
+
+    <View
+        android:id="@+id/shape3"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_width"
+        android:background="@drawable/ic_square"
+        android:backgroundTint="@color/charcoal" />
+
+    <View
+        android:id="@+id/shape4"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_width"
+        android:background="@drawable/ic_square_outline"
+        android:backgroundTint="@color/charcoal" />
+
+    <View
+        android:id="@+id/shape5"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_width"
+        android:background="@drawable/ic_triangle"
+        android:backgroundTint="@color/charcoal" />
+
+    <View
+        android:id="@+id/shape6"
+        android:layout_width="@dimen/tool_width"
+        android:layout_height="@dimen/tool_width"
+        android:background="@drawable/ic_triangle_outline"
+        android:backgroundTint="@color/charcoal" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="shape1, shape2, shape3, shape4, shape5, shape6"
+        app:flow_horizontalGap="16dp"
+        app:flow_verticalGap="16dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
