@@ -2,7 +2,9 @@ package com.wayfair.panellayout
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.children
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.color_selector.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,12 +13,23 @@ class MainActivity : AppCompatActivity() {
 
         addShowHideClickListener()
         addPanelElevationAndRadiusAnimations()
+        addColorSelectorClickListener()
     }
 
     private fun addShowHideClickListener() {
         showHideButton.setOnClickListener {
             panelLayout.panelVisible = !panelLayout.panelVisible
             showHideButton.isSelected = !showHideButton.isSelected
+        }
+    }
+
+    private fun addColorSelectorClickListener() {
+        colorSelector.children.forEach {
+            it.setOnClickListener {
+                it.backgroundTintList?.defaultColor?.let { color ->
+                    content.setBackgroundColor(color)
+                }
+            }
         }
     }
 

@@ -28,10 +28,10 @@
                 android:id="@+id/showHideButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:backgroundTint="@color/colorAccent"
+                android:src="@drawable/ic_show_hide_button"
                 android:layout_gravity="bottom|end"
                 android:layout_margin="32dp"
-                android:src="@drawable/ic_show_hide_button"
-                app:backgroundTint="@color/colorAccent"
                 app:tint="@color/white"
                 app:fabSize="normal" />
         </FrameLayout>
@@ -42,16 +42,19 @@
             android:layout_height="300dp"
             app:cardBackgroundColor="@color/white">
 
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
                 <View
                     android:id="@+id/moveHandle"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:background="#e1bee7" />
-            </FrameLayout>
+
+                <include layout="@layout/color_selector" />
+            </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
 

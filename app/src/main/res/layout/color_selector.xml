@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/colorSelector"
+    android:padding="16dp"
+    android:animateLayoutChanges="true"
+    tools:ignore="MissingConstraints"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:flow_wrapMode="aligned"
+        app:flow_horizontalGap="8dp"
+        app:flow_verticalGap="8dp"
+        app:constraint_referenced_ids="color1, color2, color3, color4, color5, color6, color7, color8, color9, color10, color11, color12, color13, color14, color15, color16, color17, color18, color19, color20, color21, color22, color23"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/color1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color1" />
+
+    <View
+        android:id="@+id/color2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color2" />
+
+    <View
+        android:id="@+id/color3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color3" />
+
+    <View
+        android:id="@+id/color4"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color4" />
+
+    <View
+        android:id="@+id/color5"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color5" />
+
+    <View
+        android:id="@+id/color6"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color6" />
+
+    <View
+        android:id="@+id/color7"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color7" />
+
+    <View
+        android:id="@+id/color8"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color8" />
+
+    <View
+        android:id="@+id/color9"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color9" />
+
+    <View
+        android:id="@+id/color10"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color10" />
+
+    <View
+        android:id="@+id/color11"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color11" />
+
+    <View
+        android:id="@+id/color12"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color12" />
+
+    <View
+        android:id="@+id/color13"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color13" />
+
+    <View
+        android:id="@+id/color14"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color14" />
+
+    <View
+        android:id="@+id/color15"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color15" />
+
+    <View
+        android:id="@+id/color16"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color16" />
+
+    <View
+        android:id="@+id/color17"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color17" />
+
+    <View
+        android:id="@+id/color18"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color18" />
+
+    <View
+        android:id="@+id/color19"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color19" />
+
+    <View
+        android:id="@+id/color20"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color20" />
+
+    <View
+        android:id="@+id/color21"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color21" />
+
+    <View
+        android:id="@+id/color22"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color22" />
+
+    <View
+        android:id="@+id/color23"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@color/color23" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
