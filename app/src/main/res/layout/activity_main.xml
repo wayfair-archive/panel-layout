@@ -12,8 +12,8 @@
         android:layout_height="match_parent"
         app:panel_content="@id/content"
         app:panel_move_handle="@id/moveHandle"
-        app:panel_resize_handle="@id/resizeHandle"
         app:panel_resize_enabled="true"
+        app:panel_resize_handle="@id/resizeHandle"
         app:panel_snap_to_edges="all"
         app:panel_start_height="300dp"
         app:panel_start_width="300dp"
@@ -24,6 +24,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#f3e5f5">
+
+            <FrameLayout
+                android:id="@+id/canvas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:background="@color/white"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:id="@+id/art"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_triangle_outline" />
+            </FrameLayout>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/showHideButton"
@@ -49,12 +67,12 @@
 
                 <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="48dp"
                         android:orientation="vertical"
                         android:padding="16dp">
 
@@ -79,7 +97,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="24dp"
                             android:text="@string/shapes"
                             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                             android:textColor="@color/charcoal" />
@@ -95,10 +113,26 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
 
-                        <include layout="@layout/color_selector" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="@string/colors"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:textColor="@color/charcoal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="16dp"
+                            android:background="@color/divider" />
+
+                        <include
+                            layout="@layout/colors"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
                     </LinearLayout>
                 </ScrollView>
-
 
                 <View
                     android:id="@+id/moveHandle"
@@ -110,13 +144,11 @@
                     android:id="@+id/resizeHandle"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/ic_resize"
+                    android:layout_gravity="bottom|end"
                     android:padding="4dp"
-                    app:tint="@color/divider"
-                    android:layout_gravity="bottom|end" />
+                    android:src="@drawable/ic_resize"
+                    app:tint="@color/divider" />
             </FrameLayout>
         </com.google.android.material.card.MaterialCardView>
-
-
     </com.wayfair.panellayout.PanelLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
