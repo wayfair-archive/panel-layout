@@ -6,7 +6,9 @@ Panel Layout is a UI library for Android that allows you to display a floating a
 
 Panel Layout makes use of [ConstraintLayout](https://developer.android.com/training/constraint-layout) to lay out panel with rest of the content.
 
-TODO: Gifs and screenshots from sample app to be added after sample app is done.
+This library is inspired by a good iOS UI framework: [PanelKit](https://github.com/louisdh/panelkit)
+
+![](https://user-images.githubusercontent.com/4990386/83229577-e6564f00-a190-11ea-8998-97322e3d818d.gif)
 
 ### Importing Panel Layout
 
