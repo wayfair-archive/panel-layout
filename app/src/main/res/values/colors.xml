@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#6a0080</color>
     <color name="colorAccent">#9C27B0</color>
     <color name="white">#FFFFFF</color>
+    <color name="divider">#20000000</color>
+    <color name="charcoal">#424242</color>
 
     <!-- Color picker values-->
     <color name="color1">#F44336</color>

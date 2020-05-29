@@ -1,10 +1,11 @@
 package com.wayfair.panellayout
 
+import android.content.res.ColorStateList
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.children
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.color_selector.*
+import kotlinx.android.synthetic.main.colors.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,10 +25,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addColorSelectorClickListener() {
-        colorSelector.children.forEach {
-            it.setOnClickListener {
+        colorSelector.children.forEach { child ->
+            child.setOnClickListener {
                 it.backgroundTintList?.defaultColor?.let { color ->
-                    content.setBackgroundColor(color)
+                    art.imageTintList = ColorStateList.valueOf(color)
                 }
             }
         }

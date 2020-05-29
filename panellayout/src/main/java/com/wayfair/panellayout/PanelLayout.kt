@@ -895,6 +895,7 @@ class PanelLayout @JvmOverloads constructor(
 
         override fun onTouch(v: View, event: MotionEvent): Boolean {
             return when (event.action) {
+                ACTION_DOWN -> true
                 ACTION_MOVE -> handleActionMove(event)
                 ACTION_UP -> handleActionUp()
                 else -> false

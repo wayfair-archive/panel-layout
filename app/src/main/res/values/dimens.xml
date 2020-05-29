@@ -3,4 +3,6 @@
     <dimen name="zero">0dp</dimen>
     <dimen name="panel_elevation">4dp</dimen>
     <dimen name="panel_corner_radius">4dp</dimen>
+    <dimen name="tool_width">32dp</dimen>
+    <dimen name="color_width">32dp</dimen>
 </resources>
