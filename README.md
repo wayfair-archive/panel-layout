@@ -26,23 +26,23 @@ dependencies {
 ### How to Use Panel Layout
 
 ## Library API
-Define if Panel Layout is visible
+Define if the Panel Layout is visible
 ```kotlin
 var panelVisible: Boolean
 ```
 
-Command that put Panel Layout in on of predefine PanelPosition. 
+The command that put Panel Layout in one of the predefine Panel Positions.
 Possible panel positions are: `LEFT_EDGE`, `RIGHT_EDGE`, `TOP_EDGE`, `BOTTOM_EDGE`, `NO_EDGE`.
 ```kotlin
 fun snapPanelTo(panelPosition: PanelPosition)
 ```
 
-Command that put Panel Layout in absolute position with coordinates `x` and `y`.
+The command that put the Panel Layout in absolute position with coordinates `x` and `y`.
 ```kotlin
 fun popPanelTo(x: Int, y: Int)
 ```
 
-Define listener to define actions on different kind of events.
+Define a listener to define actions on different kinds of events.
 ```kotlin
 var panelLayoutCallbacks: PanelLayout.Callbacks?
 
@@ -57,7 +57,7 @@ interface Callbacks {
 
 ## Example
 
-Add Panel Layout in layout:
+Add Panel Layout in your layout:
 ```xml
 <com.wayfair.panellayout.PanelLayout
         android:id="@+id/panelLayout"
