@@ -55,6 +55,14 @@ interface Callbacks {
 }
 ```
 
+Panel Layout attributes:
+`panel_content` - Resource id of view where is placed the Panel Layout
+`panel_view` - Resource id of view inside the Panel Layout 
+`panel_move_handle` - Resource id of view used for moving the Panel Layout inside of content view
+`panel_resize_enabled` - Flag that defines if the Panel Layout is resizable
+`panel_snap_to_edges` - Define edges where the Panel Layout could be snapped. Possible values: `all`, `none`, `left`, `top`, `right` and `bottom`
+`panel_start_height` - Start height
+`panel_start_width` - Start width
 #### Example
 
 Add Panel Layout in your layout:
@@ -71,10 +79,44 @@ Add Panel Layout in your layout:
         app:panel_start_height="300dp"
         app:panel_start_width="300dp"
         app:panel_view="@id/panel">
-</com.wayfair.panellayout.PanelLayout>
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f3e5f5">
+        </FrameLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/panel"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:cardBackgroundColor="@color/white">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/moveHandle"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#e1bee7" />
+
+                <ImageView
+                    android:id="@+id/resizeHandle"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom|end"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_resize"
+                    app:tint="@color/divider" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </com.wayfair.panellayout.PanelLayout>
 ``` 
 
-Controls and listeners in your code:
+Controls and listeners in the code:
 ```kotlin
 panelLayout.panelVisible = !panelLayout.panelVisible
 ```
