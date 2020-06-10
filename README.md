@@ -57,12 +57,19 @@ interface Callbacks {
 
 Panel Layout attributes:
 `panel_content` - Resource id of view where is placed the Panel Layout
-`panel_view` - Resource id of view inside the Panel Layout 
+
+`panel_view` - Resource id of view inside the Panel Layout
+ 
 `panel_move_handle` - Resource id of view used for moving the Panel Layout inside of content view
+
 `panel_resize_enabled` - Flag that defines if the Panel Layout is resizable
+
 `panel_snap_to_edges` - Define edges where the Panel Layout could be snapped. Possible values: `all`, `none`, `left`, `top`, `right` and `bottom`
+
 `panel_start_height` - Start height
+
 `panel_start_width` - Start width
+
 #### Example
 
 Add Panel Layout in your layout:
