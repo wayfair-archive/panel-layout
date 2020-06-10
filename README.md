@@ -23,9 +23,7 @@ dependencies {
 
 **Note:** Panel Layout is currently in alpha and the public API it offers is __subject to heavy changes__.
 
-### How to Use Panel Layout
-
-#### Library API
+### Panel Layout API
 Define if the Panel Layout is visible
 ```kotlin
 var panelVisible: Boolean
@@ -55,7 +53,8 @@ interface Callbacks {
 }
 ```
 
-Panel Layout attributes:
+### Panel Layout attributes
+
 `panel_content` - Resource id of view where is placed the Panel Layout
 
 `panel_view` - Resource id of view inside the Panel Layout
@@ -70,7 +69,7 @@ Panel Layout attributes:
 
 `panel_start_width` - Start width
 
-#### Example
+### How to Use Panel Layout
 
 Add Panel Layout in your layout:
 ```xml
