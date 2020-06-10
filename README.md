@@ -26,21 +26,23 @@ dependencies {
 ### How to Use Panel Layout
 
 ## Library API
+Define if Panel Layout is visible
 ```kotlin
 var panelVisible: Boolean
 ```
-Define if Panel Layout is visible
 
+Command that put Panel Layout in on of predefine PanelPosition. 
+Possible panel positions are: `LEFT_EDGE`, `RIGHT_EDGE`, `TOP_EDGE`, `BOTTOM_EDGE`, `NO_EDGE`.
 ```kotlin
 fun snapPanelTo(panelPosition: PanelPosition)
 ```
-Command that put Panel Layout in on of predefine PanelPosition. Possible panel positions are: LEFT_EDGE, RIGHT_EDGE, TOP_EDGE, BOTTOM_EDGE, NO_EDGE.
 
+Command that put Panel Layout in absolute position with coordinates `x` and `y`.
 ```kotlin
 fun popPanelTo(x: Int, y: Int)
 ```
-Command that put Panel Layout in absolute position with coordinates `x` and `y`.
 
+Define listener to define actions on different kind of events.
 ```kotlin
 var panelLayoutCallbacks: PanelLayout.Callbacks?
 
@@ -52,7 +54,6 @@ interface Callbacks {
     fun afterClose()
 }
 ```
-Define listener to define actions on different kind of events.
 
 ## Example
 
