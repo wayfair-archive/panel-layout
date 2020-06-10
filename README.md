@@ -25,7 +25,7 @@ dependencies {
 
 ### How to Use Panel Layout
 
-## Library API
+#### Library API
 Define if the Panel Layout is visible
 ```kotlin
 var panelVisible: Boolean
@@ -55,7 +55,7 @@ interface Callbacks {
 }
 ```
 
-## Example
+#### Example
 
 Add Panel Layout in your layout:
 ```xml
