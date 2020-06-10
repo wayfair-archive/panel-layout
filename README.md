@@ -25,7 +25,87 @@ dependencies {
 
 ### How to Use Panel Layout
 
-TODO: Add API Docs and snippets from the sample app.
+## Library API
+```kotlin
+var panelVisible: Boolean
+```
+Define if Panel Layout is visible
+
+```kotlin
+fun snapPanelTo(panelPosition: PanelPosition)
+```
+Command that put Panel Layout in on of predefine PanelPosition. Possible panel positions are: LEFT_EDGE, RIGHT_EDGE, TOP_EDGE, BOTTOM_EDGE, NO_EDGE.
+
+```kotlin
+fun popPanelTo(x: Int, y: Int)
+```
+Command that put Panel Layout in absolute position with coordinates `x` and `y`.
+
+```kotlin
+var panelLayoutCallbacks: PanelLayout.Callbacks?
+
+interface Callbacks {
+    fun beforeSnap(position: PanelPosition)
+    fun afterSnap(position: PanelPosition)
+    fun beforePop(popToX: Int, popToY: Int)
+    fun afterPop(popToX: Int, popToY: Int)
+    fun afterClose()
+}
+```
+Define listener to define actions on different kind of events.
+
+## Example
+
+Add Panel Layout in layout:
+```xml
+<com.wayfair.panellayout.PanelLayout
+        android:id="@+id/panelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:panel_content="@id/content"
+        app:panel_move_handle="@id/moveHandle"
+        app:panel_resize_enabled="true"
+        app:panel_resize_handle="@id/resizeHandle"
+        app:panel_snap_to_edges="all"
+        app:panel_start_height="300dp"
+        app:panel_start_width="300dp"
+        app:panel_view="@id/panel">
+</com.wayfair.panellayout.PanelLayout>
+``` 
+
+Controls and listeners in your code:
+```kotlin
+panelLayout.panelVisible = !panelLayout.panelVisible
+```
+```kotlin
+panelLayout.popPanelTo(100, 100)
+```
+```kotlin
+panelLayout.snapPanelTo(PanelPosition.RIGHT_EDGE)
+```
+```kotlin
+panelLayout.panelLayoutCallbacks = object : PanelLayout.Callbacks {
+    override fun beforeSnap(position: PanelPosition) {
+        TODO("Not yet implemented")
+    }
+
+    override fun afterSnap(position: PanelPosition) {
+        TODO("Not yet implemented")
+    }
+
+    override fun beforePop(popToX: Int, popToY: Int) {
+        TODO("Not yet implemented")
+    }
+
+    override fun afterPop(popToX: Int, popToY: Int) {
+        TODO("Not yet implemented")
+    }
+
+    override fun afterClose() {
+        TODO("Not yet implemented")
+    }
+}
+```
 
 ### LICENSE
 
