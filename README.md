@@ -1,3 +1,5 @@
+*ARCHIVED* -- Wayfair's technology team is now focused on other endeavors. Please consider this project archived / available as-is until further notice.
+
 ## Panel Layout
 
 ![CI](https://github.com/GradleUp/auto-manifest/workflows/CI/badge.svg)
